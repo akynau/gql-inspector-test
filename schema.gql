@@ -1,0 +1,18 @@
+directive @extends on INTERFACE | OBJECT
+
+directive @external on FIELD_DEFINITION | OBJECT
+
+directive @key(fields: String!) on INTERFACE | OBJECT
+
+directive @provides(fields: String!) on FIELD_DEFINITION
+
+directive @requires(fields: String!) on FIELD_DEFINITION
+
+type TestObject {
+  testField: String!
+}
+
+type Query {
+  firstQuery: Boolean!
+  secondQuery: TestObject!
+}
