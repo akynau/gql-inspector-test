@@ -9,7 +9,7 @@ directive @provides(fields: String!) on FIELD_DEFINITION
 directive @requires(fields: String!) on FIELD_DEFINITION
 
 type TestObject {
-  testField: String!
+  testField: Boolean!
 }
 
 type Query {
