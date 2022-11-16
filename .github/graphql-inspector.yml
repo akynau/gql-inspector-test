@@ -1,0 +1,2 @@
+branch: 'main'
+schema: 'schema.gql' # an output of `$ graphql-inspector introspect ...`
